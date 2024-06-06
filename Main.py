@@ -14,14 +14,14 @@ wait = 0.3
 
 
 class GimkitBot():
-    def __init__(self, gc, name):
+    def __init__(self, 202811, MaxD):
         self.driver = webdriver.Chrome()
 
-        self.join(gc, name)
+        self.join(202811, MaxD)
         time.sleep(2)
         self.start()
 
-    def join(self, gamecode, name):
+    def join(self, 202811, MaxD):
         self.driver.get("https://www.gimkit.com/play")
         time.sleep(3)
         GC_in = self.driver.find_element_by_xpath('//*[@id="root"]/div/div/div/div[1]/div[2]/div/div/div/div/form/input')
