@@ -14,7 +14,7 @@ wait = 0.3
 
 
 class GimkitBot():
-    def __init__(self, gc, name):
+    def __init__(self, 202811, maxd):
         self.driver = webdriver.Chrome()
 
         self.join(gc, name)
